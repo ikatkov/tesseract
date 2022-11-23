@@ -23,7 +23,7 @@ https://github.com/tesseract-ocr/tessdoc
 	docker run --rm -it --name tesseract -e "TESSDATA_PREFIX=/data/tessdata" -v /Users/ikatkov/non-work-projects/tesseract/data/:/data -w /data clearlinux/tesseract-ocr tesseract img.jpg stdout --oem 1
     ```
 
-or
+	or
     ```
 	docker run --rm -it --name tesseract -e "TESSDATA_PREFIX=/data/tessdata" -v /Users/ikatkov/non-work-projects/tesseract/data/:/data -w /data clearlinux/tesseract-ocr tesseract img.jpg stdout --oem 1 --psm 6
     ```
