@@ -4,10 +4,10 @@ https://github.com/tesseract-ocr/tessdoc
 
 
 1. Create folder structure
-```
-Mkdir data
-Mkdir data/tessdata
-```
+	```
+	Mkdir data
+	Mkdir data/tessdata
+	```
 
 2. Pull the image from Docker Hub: 
     ```
@@ -24,7 +24,6 @@ Mkdir data/tessdata
     ```
 
 or
-
     ```
 	docker run --rm -it --name tesseract -e "TESSDATA_PREFIX=/data/tessdata" -v /Users/ikatkov/non-work-projects/tesseract/data/:/data -w /data clearlinux/tesseract-ocr tesseract img.jpg stdout --oem 1 --psm 6
     ```
